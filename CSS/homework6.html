@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head> Learning HTML and CSS through<strong> pirple </strong>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Homework6</title>
+		<!-- internal style sheet used for paragraph and h1-->
+		<style>
+			body {
+				margin: auto;
+				padding: 0px; 
+				}
+			body {
+			  background-color: lightblue;
+			}
+			@media screen and (min-width: 400px) {
+			  body {
+				background-color: lightgreen;
+			  }
+			}
+			@media screen and (max-width: 750px) and (min-width: 401px) {
+			  body {
+				background-color: lightgray;
+			  }
+			}
+			@media screen and (max-width: 751px) {
+			  body {
+				background-color: lightred	;
+			  }
+			}
+			
+			.div-example {
+			  background-color: lightgrey;
+			  padding-right: 5px;
+			}
+
+			@media screen and (min-width: 601px) {
+			  .div-example {
+				font-size: 15px;
+				font-color: red;
+			  }
+			}
+
+			@media screen and (max-width: 600px) {
+			  .div-example {
+				font-size: 8px;
+				
+			  }
+			}
+			
+			@media(max-width:767px) {
+				#ordered{display:none;}
+									}
+									
+			h1 {
+				font-size: 35px;
+				background-color: white;
+				margin: 10px 0px;
+				padding: 0px;
+				text-align: center;
+				margin: 0px 0px;
+					   }
+			section h2 {
+				font-size: 20px;
+				background-color: yellow;
+				width: 200px;
+				text-align: center;
+							}
+			.div-example{	
+							font-family: Arial;
+							color: black;
+							margin: 5px 5px;
+						}
+			ul {
+					list-style-image: url('blacktick.jpg');
+					padding-left: 50px;
+				}
+			.div-example h2 {
+					font-family: cursive;
+								}
+			span { 
+					font-family: italic;
+			} 
+			#three span {
+						text-decoration: underline;
+						}
+			.span {
+					 font-family: Arial;
+					 color: red;
+			}
+			nav,footer {
+					height: 50px;
+					background-color: teal;
+					widht: 100%;
+					line-height: 50px;
+					color: white;
+					padding-left:20px;
+					margin: 0px;
+			}
+			nav ul {
+					list-style: none;
+					padding-left: 0px;
+					display: flex;
+					margin-top: 5px;
+			}
+			nav li{
+					background-color: brown;
+			}
+			
+			nav li:hover{
+					background-color: blue;
+			}
+				
+			nav a{
+					text-decoration: none;
+					color: yellow;
+					display: block;
+					padding: 0 10px;
+			}
+			footer p {
+				margin: 0px;
+				padding-left: 20px;
+			}
+			main article {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				width: 100%;
+				margin: 20px;
+			}
+			#description {
+						 width: 50%;
+						 font-size: 17px;
+						 margin-right: 20px;
+					}
+			#description p:first-child {
+						 margin-bottom: 20px;
+					}
+			.list {
+					background-color: #fff;
+					border-radius: 5%;
+					width:100%;
+					padding-bottom: 2px;
+			}
+			.list h2{
+					 text-align: center;
+			}
+			.list li{
+					  font-size: 20px;
+			}
+			
+			#image {
+					text-align: center;
+			}
+			
+			#image img {
+					width: 35%;
+					height: auto;
+			}
+
+		</style>
+	</head>
+	<body>
+	<main>
+	 <nav id="nav">
+		<ul>
+			<li><a href=""> Home </a></li>
+			<li><a href="gallery.html" target="_blank"> Gallery </a></li>
+			<li><a href="contact.html" target="_blank"> Contact Us </a></li>
+		<ul>
+	 </nav>
+	 
+		<h1><b><u>Ginger Tea</u></b></h1>
+		
+	  <article>
+		<section id="description">
+		
+			<div class="div-example">
+				<h2><u>Description:</u></h2>
+				<p>Ever had real, fresh ginger tea? It’s soothing and invigorating at the same time. 
+					Ginger tea has been consumed for centuries, and yet it has only recently crossed my radar. 
+					I love it!
+					I’ve been drinking ginger tea because I enjoy fresh ginger flavor, 
+					but it has a lot more going for it than flavor alone.
+					Ginger tea is a lovely, lightly spicy drink for warming up on cold days. 
+					It’s a light, alcohol-free alternative to a night cap. </p>
+			</div>
+			
+			<h2><u>Benefits of tea: </u></h2>
+			
+			<div class="div-example" id="one">
+				<h3><u>1.Relieve nausea</u></h3>
+				<p>Drinking a cup of ginger tea before travelling can help 
+					<span class="span"><em>prevent the nausea and vomiting</em></span> associated with motion sickness. 
+							You can also drink a cuppa at the first sign of nausea to relieve the symptom.
+				</p>	
+			</div>
+			
+			<div class="div-example" id="two">
+				<h3><u>2.Improve stomach performance</u></h3>
+				<p>Useful in <span class="span" style="color:blue"><em>improving digestion and increasing absorption </em></span>
+					of food, ginger tea can bloating after eating too much.</p>
+			</div>
+			
+			<div class="div-example" id="three">
+				<h3><u>3.Reduce inflammation</u></h3>
+				<p>Ginger contains anti-inflammatory properties that make it an ideal home remedy for 
+					<span class="span" style="color:blue"><em>muscle and joint problems.</em></span> 
+				    In addition to drinking ginger tea, you can also use it to soak inflamed joints.</p>
+			</div>
+			
+		</section>
+		
+		<section>
+			<!-- Unordered list-->
+			<section class="list" id="unordered">
+			<ul c>
+				<h2><u>Ingredients required: </u></h2>
+				<li>Water</li>
+				<li>Sugar</li>
+				<li><strong>Ginger</strong></li>
+				<li>Tea leaves</li>
+				<li>Milk</li>
+			</ul>
+			</section>
+			
+			<!-- Ordered list and adding emojis-->
+			<section class="list" id="ordered">
+				<ol type='1'>
+				<h2><b><u>Recipe:</u></b></h2>
+					<p><li>Put the water in the vessel and boil it for some time.🚰</li>
+					   <li>Add some tea leaves.🍃</li>
+					   <li>Add sugar and ginger.🍬</li>
+					   <li>Wait till it boils.☕</li> 
+					   <li>And then add milk.🥛</li> 
+					   <li>Your Ginger Tea is ready.☕</li></p>
+				</ol>
+			</section>
+		</section>
+      </article>
+	  <section id="image">
+			<!-- Adding Images-->
+			<p><marquee><i><b>GINGER TEA</b></i></marquee></p>
+			<img src="tea1.jpg" alt="Ginger Tea 1" height="300px" width="100px">
+			<img src="tea2.jpg" alt="Ginger Tea 2" height="300px" width="100px">
+			<img src="tea3.jpg" alt="Ginger Tea 3" height="300px" width="100px">
+		</section>
+	 </main>  
+	 <footer>
+		<p>Page Created by Falgun Panchal</p>
+	 </footer>
+	</body>
+</html>
